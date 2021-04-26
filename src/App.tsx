@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import '../src/Components/List';
+import './Components/List';
 
 function App() {
   return (

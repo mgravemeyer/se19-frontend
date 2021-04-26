@@ -13,8 +13,8 @@ interface ListItemInterface {
 const List: React.FC<ListProps> = ({list}) => {
     return (
         <>
-            {list.map( (items) => {
-
+            {list.map( (item) => {
+                <ListItem item={item}/>
             } )}
         </>
     )
