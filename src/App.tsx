@@ -13,16 +13,15 @@ function App() {
     const [list, setList] = useState<ListItemInterface[]>(
         [
             {
-                id: "test",
-                name: "test"
-            }
+                id: "testID",
+                name: "testName"
+            },
         ]
     )
 
   return (
     <div className="App">
       <header className="App-header">
-          <p>test</p>
           <List list={list}/>
       </header>
     </div>

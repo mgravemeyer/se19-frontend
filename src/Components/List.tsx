@@ -12,11 +12,11 @@ interface ListItemInterface {
 
 const List: React.FC<ListProps> = ({list}) => {
     return (
-        <>
+        <div className="List">
             {list.map( (item) => {
-                <ListItem item={item}/>
+                return <ListItem key={item.id} item={item}/>
             } )}
-        </>
+        </div>
     )
 }
 
