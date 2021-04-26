@@ -1,10 +1,10 @@
 import React from 'react';
 
 interface ListItemProps {
-    item: ListItem
+    item: ListItemInterface
 }
 
-interface ListItem {
+interface ListItemInterface {
     id: string
     name: string
 }

@@ -1,10 +1,11 @@
 import React from 'react';
+import ListItem from './ListItem';
 
 export interface ListProps {
-    list: ListItem[];
+    list: ListItemInterface[];
 }
 
-interface ListItem {
+interface ListItemInterface {
     id: string
     name: string
 }
