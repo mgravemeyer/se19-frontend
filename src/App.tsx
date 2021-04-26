@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import './App.css';
 import './Components/List';
 import List from "./Components/List";
 
