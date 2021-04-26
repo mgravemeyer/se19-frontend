@@ -1,12 +1,18 @@
 import React from 'react';
 
 interface ListItemProps {
-
+    item: ListItem
 }
 
-const ListItem: React.FC<ListItemProps> = () => {
+interface ListItem {
+    id: string
+    name: string
+}
+
+const ListItem: React.FC<ListItemProps> = ({item}) => {
     return (
         <>
+            <p key={item.id}>{item.name}</p>
         </>
     )
 }
