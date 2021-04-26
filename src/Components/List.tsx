@@ -1,13 +1,20 @@
 import React from 'react';
 
 export interface ListProps {
-    title: string;
+    list: ListItem[];
 }
 
-const List: React.FC<ListProps> = (title) => {
+interface ListItem {
+    id: string
+    name: string
+}
+
+const List: React.FC<ListProps> = ({list}) => {
     return (
         <>
+            {list.map( (items) => {
 
+            } )}
         </>
     )
 }
