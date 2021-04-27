@@ -2,13 +2,13 @@ import React from 'react';
 import ListItemInterface from '../Interfaces/ListItemInterface';
 
 export interface AddButtonProps {
-    setList: React.Dispatch<React.SetStateAction<ListItemInterface[]>>
+    addItem: Function
 }
 
-const AddItem: React.FC<AddButtonProps> = ({setList}) => {
+const AddItem: React.FC<AddButtonProps> = ({addItem}) => {
     return (
         <div className="AddItem">
-            <button onClick={() => setList}>
+            <button onClick={() => addItem()}>
 
             </button>
         </div>

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Components/List';
+import AddItem from "./Components/AddItem";
 import List from "./Components/List";
 
 interface ListItemInterface {
@@ -8,6 +9,12 @@ interface ListItemInterface {
 }
 
 function App() {
+
+    const addItem = () => {
+        const id = Math.floor(Math.random() * 10000) + 1
+        const newItem: ListItemInterface = {id: "test", name: "test"}
+        setList([...list, newItem])
+    }
 
     const [list, setList] = useState<ListItemInterface[]>(
         [
@@ -21,7 +28,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <List list={list} setList={setList}/>
+          <List list={list} setList={addItem}/>
+          <AddItem addItem={addItem}/>
       </header>
     </div>
   );
