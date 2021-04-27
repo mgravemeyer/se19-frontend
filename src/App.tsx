@@ -9,12 +9,12 @@ interface ListItemInterface {
 }
 
 function App() {
-    const rename = (capitals: any): any => {
-        const test: ListItemInterface[] = []
-        capitals.forEach((item:any) => {
-            test.push({id: item._id, name: item.name})
+    const convertJSON = (jsonObject: any): any => {
+        const convertedJSON: ListItemInterface[] = []
+        jsonObject.forEach((item:any) => {
+            convertedJSON.push({id: item._id, name: item.name})
         });
-        return test;
+        return convertedJSON;
     }
 
     useEffect(() => {
@@ -22,7 +22,7 @@ function App() {
             "method": "GET",
         })
             .then(response => response.json())
-            .then(data => rename(data))
+            .then(data => convertJSON(data))
             .then(dataFinal => setList(dataFinal))
     }, []);
 
