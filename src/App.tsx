@@ -28,8 +28,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <List list={list} setList={addItem}/>
           <AddItem addItem={addItem}/>
+          <List list={list} setList={addItem}/>
       </header>
     </div>
   );
