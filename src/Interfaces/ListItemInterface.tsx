@@ -1,4 +1,4 @@
 export default interface ListItemInterface {
-    id: string
+    id: number
     name: string
 }

@@ -3,22 +3,22 @@ import AddItem from "./Components/AddItem";
 import List from "./Components/List";
 
 interface ListItemInterface {
-    id: string
+    id: number
     name: string
 }
 
 function App() {
 
-    const addItem = () => {
+    const addItem = (name: string) => {
         const id = Math.floor(Math.random() * 10000) + 1
-        const newItem: ListItemInterface = {id: "test", name: "test"}
+        const newItem: ListItemInterface = {id: id, name: name}
         setList([...list, newItem])
     }
 
     const [list, setList] = useState<ListItemInterface[]>(
         [
             {
-                id: "testID",
+                id: 123,
                 name: "testName"
             },
         ]
@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <header className="App-header">
           <AddItem addItem={addItem}/>
-          <List list={list} setList={addItem}/>
+          <List list={list}/>
       </header>
     </div>
   );

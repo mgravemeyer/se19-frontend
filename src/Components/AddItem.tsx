@@ -15,7 +15,7 @@ const AddItem: React.FC<AddButtonProps> = ({addItem}) => {
             alert('Please add a text')
             return
         }
-        addItem()
+        addItem(inputText)
         setInputText('')
         return
     }
@@ -25,7 +25,6 @@ const AddItem: React.FC<AddButtonProps> = ({addItem}) => {
             <input type='text' placeholder='Add Task' value={inputText} onChange={(e) => setInputText(e.target.value)}/>
             <input type='submit' value='Save Task'/>
         </form>
-        // <button onClick={() => addItem()}></button>
     )
 }
 
