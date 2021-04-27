@@ -1,3 +1,3 @@
 # SE_19
 
-## A react app build for the SE_19 module. Uses React with Typescript and makes API calls to a webserver that is running node and express and a postgresql dbms.
+### A react app build for the SE_19 module. The App uses react, react-dom, typescript and makes API calls to a webserver that runs a node app. The node app is connected to a mongodb (atlas).
