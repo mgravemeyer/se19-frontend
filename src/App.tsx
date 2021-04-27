@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import AddItem from "./Components/AddItem";
 import List from "./Components/List";
 import './Style/AppStyle.sass';
@@ -9,6 +9,14 @@ interface ListItemInterface {
 }
 
 function App() {
+
+    useEffect(() => {
+        fetch("https://dry-refuge-25840.herokuapp.com/list", {
+            "method": "GET",
+        })
+            .then(response => response.json())
+            .then(data => setList(data))
+    })
 
     const addItem = (name: string) => {
         const id = Math.floor(Math.random() * 10000) + 1
