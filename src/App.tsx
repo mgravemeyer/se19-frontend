@@ -17,7 +17,6 @@ function App() {
 
     const removeItem = (id: number) => {
         setList(list.filter((item) => item.id !== id))
-        // setTasks(tasks.filter((task) => task.id !== id))
     }
 
     const [list, setList] = useState<ListItemInterface[]>(
