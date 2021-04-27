@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <header className="App-header">
           <AddItem addItem={addItem}/>
-          <List list={list}/>
+          <List list={list} removeItem={removeItem}/>
       </header>
     </div>
   );

@@ -3,12 +3,15 @@ import ListItemInterface from '../Interfaces/ListItemInterface';
 
 interface ListItemProps {
     item: ListItemInterface
+    removeItem: Function
 }
 
-const ListItem: React.FC<ListItemProps> = ({item}) => {
+const ListItem: React.FC<ListItemProps> = ({item, removeItem}) => {
     return (
         <>
-            <p key={item.id}>{item.name}</p>
+            <div className="item">
+                <p key={item.id} onClick={() => (removeItem(item.id))}>{item.name}</p>
+            </div>
         </>
     )
 }
