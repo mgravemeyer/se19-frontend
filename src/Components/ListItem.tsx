@@ -1,12 +1,8 @@
 import React from 'react';
+import ListItemInterface from '../Interfaces/ListItemInterface';
 
 interface ListItemProps {
     item: ListItemInterface
-}
-
-interface ListItemInterface {
-    id: string
-    name: string
 }
 
 const ListItem: React.FC<ListItemProps> = ({item}) => {
