@@ -22,7 +22,7 @@ const AddItem: React.FC<AddButtonProps> = ({addItem}) => {
 
     return (
         <form className='add-form' onSubmit={onSubmit}>
-            <input type='text' placeholder='Add Task' value={inputText} onChange={(e) => setInputText(e.target.value)}/>
+            <input type='text' placeholder='Add Item' value={inputText} onChange={(e) => setInputText(e.target.value)}/>
             <input type='submit' value='Save Task'/>
         </form>
     )
