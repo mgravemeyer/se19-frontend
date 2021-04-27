@@ -19,7 +19,7 @@ function App() {
 
     useEffect(() => {
         fetch("https://dry-refuge-25840.herokuapp.com/list", {
-            "method": "GET",
+            method: "GET",
         })
             .then(response => response.json())
             .then(data => convertJSON(data))
@@ -27,6 +27,16 @@ function App() {
     }, []);
 
     const addItem = (name: string) => {
+        //updating backend
+        fetch("https://dry-refuge-25840.herokuapp.com/list", {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                'id' : '123',
+                'name': name
+            }),
+        })
+        //updating frontend
         const id = Math.floor(Math.random() * 10000) + 1
         const newItem: ListItemInterface = {id: id, name: name}
         setList([...list, newItem])
