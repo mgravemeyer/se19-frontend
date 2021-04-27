@@ -28,6 +28,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+          <h1> Web Technologies Basics </h1>
           <AddItem addItem={addItem}/>
           <List list={list} removeItem={removeItem}/>
       </header>
