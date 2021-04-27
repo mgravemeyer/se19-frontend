@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import AddItem from "./Components/AddItem";
 import List from "./Components/List";
+import './Style/AppStyle.sass';
 
 interface ListItemInterface {
     id: number
