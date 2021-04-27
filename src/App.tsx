@@ -10,12 +10,24 @@ interface ListItemInterface {
 
 function App() {
 
+    const rename = (capitals: any): any => {
+
+        const test: ListItemInterface[] = []
+
+        capitals.forEach((item:any) => {
+            test.push({id: item._id, name: item.name})
+        });
+
+        return test;
+    }
+
     useEffect(() => {
         fetch("https://dry-refuge-25840.herokuapp.com/list", {
             "method": "GET",
         })
             .then(response => response.json())
-            .then(data => setList(data))
+            .then(data => rename(data))
+            .then(dataFinal => setList(dataFinal))
     })
 
     const addItem = (name: string) => {
