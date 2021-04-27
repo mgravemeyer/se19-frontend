@@ -9,15 +9,11 @@ interface ListItemInterface {
 }
 
 function App() {
-
     const rename = (capitals: any): any => {
-
         const test: ListItemInterface[] = []
-
         capitals.forEach((item:any) => {
             test.push({id: item._id, name: item.name})
         });
-
         return test;
     }
 
@@ -28,7 +24,7 @@ function App() {
             .then(response => response.json())
             .then(data => rename(data))
             .then(dataFinal => setList(dataFinal))
-    })
+    }, []);
 
     const addItem = (name: string) => {
         const id = Math.floor(Math.random() * 10000) + 1
