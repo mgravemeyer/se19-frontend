@@ -21,10 +21,6 @@ function App() {
 
     const [list, setList] = useState<ListItemInterface[]>(
         [
-            {
-                id: 123,
-                name: "testName"
-            },
         ]
     )
 
