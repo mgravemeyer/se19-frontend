@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <List list={list}/>
+          <List list={list} setList={setList}/>
       </header>
     </div>
   );
