@@ -10,7 +10,7 @@ export interface ListProps {
 const List: React.FC<ListProps> = ({list, removeItem}) => {
     return (
         <div className="List">
-            {list.map( (item) => {
+            {list.slice(0).reverse().map( (item) => {
                 return <ListItem key={item.id} item={item} removeItem={removeItem}/>
             } )}
         </div>
