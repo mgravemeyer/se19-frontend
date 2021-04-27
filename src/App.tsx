@@ -15,7 +15,7 @@ function App() {
         setList([...list, newItem])
     }
 
-    const deleteItem = (id: number) => {
+    const removeItem = (id: number) => {
         setList(list.filter((item) => item.id !== id))
         // setTasks(tasks.filter((task) => task.id !== id))
     }
