@@ -1,5 +1,4 @@
 import React from 'react';
-import ListItemInterface from '../Interfaces/ListItemInterface';
 
 export interface AddButtonProps {
     addItem: Function

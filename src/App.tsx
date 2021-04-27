@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import './Components/List';
 import AddItem from "./Components/AddItem";
 import List from "./Components/List";
 
