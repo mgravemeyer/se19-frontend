@@ -2,21 +2,21 @@
 ### A react app build for the SE_19 module. The App uses react, react-dom, typescript and makes API calls to a webserver that runs a node app. The node app is connected to a mongodb (atlas).
 ## Running the App
 ###Running locally:
-####1. You need to have node installed
-####2. You  need to have the yarn package manager
-####3. Clone the repo and hit `yarn install` in you terminal
-####4. Last thing to start the app hit `yarn run`
+1. You need to have node installed  
+2. You  need to have the yarn package manager  
+3. Clone the repo and hit `yarn install` in you terminal  
+4. Last thing to start the app hit `yarn run`  
 ###[Live version](https://www.chimp.berlin/se19/)
 ###[API link](https://dry-refuge-25840.herokuapp.com)
 
 ![app](https://i.ibb.co/Z6qtCY1/Screenshot-2021-04-28-at-15-16-36.png)
 
-###React Frontend
+###React Frontend  
 Using the React library, I developed some components in TSX (Typescript XML). In the App.tsx file, I used a react hook to create a new state object. According to data changes, my components will update their view based on the state. Here you can see the components that I used:
 
 ![components](https://i.ibb.co/M14w8bv/Screenshot-2021-04-28-at-20-46-07.png)
 
-###Flow
+###Flow  
 ![flow](https://i.ibb.co/CsNXx6Q/Screenshot-2021-04-28-at-21-15-12.png)
 1. A user is opening a browser and sends a request to the webserver where the website is running.  
 2. The web server runs on apache (hosted on strato). Apache serves the requested files back to the user. The Browser is interpreting the files and displays the content.  
