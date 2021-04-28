@@ -6,16 +6,12 @@
 2. You  need to have the yarn package manager  
 3. Clone the repo and hit `yarn install` in you terminal  
 4. Last thing to start the app hit `yarn run`  
-###[Live version](https://www.chimp.berlin/se19/)   
-###[API link](https://dry-refuge-25840.herokuapp.com)   
-
-![app](https://i.ibb.co/Z6qtCY1/Screenshot-2021-04-28-at-15-16-36.png)   
-
+[Live version](https://www.chimp.berlin/se19/)   
+[API link](https://dry-refuge-25840.herokuapp.com)
+![app](https://i.ibb.co/Z6qtCY1/Screenshot-2021-04-28-at-15-16-36.png)
 ###React Frontend  
 Using the React library, I developed some components in TSX (Typescript XML). In the App.tsx file, I used a react hook to create a new state object. According to data changes, my components will update their view based on the state. Here you can see the components that I used:
-
-![components](https://i.ibb.co/M14w8bv/Screenshot-2021-04-28-at-20-46-07.png)   
-
+![components](https://i.ibb.co/M14w8bv/Screenshot-2021-04-28-at-20-46-07.png)
 ###Flow  
 ![flow](https://i.ibb.co/CsNXx6Q/Screenshot-2021-04-28-at-21-15-12.png)   
 1. A user is opening a browser and sends a request to the webserver where the website is running.  
