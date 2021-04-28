@@ -2,11 +2,7 @@ import React, {useEffect, useState} from 'react';
 import AddItem from "./Components/AddItem";
 import List from "./Components/List";
 import './Style/AppStyle.sass';
-
-interface ListItemInterface {
-    id: number
-    name: string
-}
+import ListItemInterface from './Interfaces/ListItemInterface';
 
 function App() {
     const convertJSON = (jsonObject: any): any => {
@@ -39,7 +35,7 @@ function App() {
             .then(jsonObject => setList([...list, {id: jsonObject.id, name: name}]))
     }
 
-    const removeItem = (id: number) => {
+    const removeItem = (id: string) => {
         //updating backend
         fetch("https://dry-refuge-25840.herokuapp.com/listRemove", {
             method: "POST",
