@@ -28,7 +28,7 @@ function App() {
 
     const addItem = (name: string) => {
         //updating backend
-        fetch("https://dry-refuge-25840.herokuapp.com/list", {
+        fetch("https://dry-refuge-25840.herokuapp.com/listAdd", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -43,6 +43,15 @@ function App() {
     }
 
     const removeItem = (id: number) => {
+        //updating backend
+        fetch("https://dry-refuge-25840.herokuapp.com/listRemove", {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                'id' : id
+            }),
+        })
+        //updating frontend
         setList(list.filter((item) => item.id !== id))
     }
 
