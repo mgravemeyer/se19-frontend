@@ -37,7 +37,7 @@ function App() {
 
     const removeItem = (id: string) => {
         //updating backend
-        fetch("https://dry-refuge-25840.herokuapp.com/listRemove", {
+        fetch("https://dry-refuge-25840.herokuapp.com/listRemoveItem", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
