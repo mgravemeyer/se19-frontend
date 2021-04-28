@@ -8,7 +8,7 @@
 4. Last thing to start the app hit `yarn run`  
 [Live version](https://www.chimp.berlin/se19/)   
 [API link](https://dry-refuge-25840.herokuapp.com)
-![app](https://i.ibb.co/Z6qtCY1/Screenshot-2021-04-28-at-15-16-36.png)
+![app](https://i.ibb.co/Z6qtCY1/Screenshot-2021-04-28-at-15-16-36.png)  
 ###React Frontend  
 Using the React library, I developed some components in TSX (Typescript XML). In the App.tsx file, I used a react hook to create a new state object. According to data changes, my components will update their view based on the state. Here you can see the components that I used:
 ![components](https://i.ibb.co/M14w8bv/Screenshot-2021-04-28-at-20-46-07.png)
