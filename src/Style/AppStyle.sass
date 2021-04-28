@@ -15,9 +15,16 @@ p, a, input, h1
   font-family: 'Rubik', sans-serif
 
 input[type=submit]
-  &:hover
-  cursor: pointer
+  background-color: #EFEFEF
+  color: #000000
   border-radius: 0px 5px 5px 0px
+
+input[type=submit]
+  &:hover
+    transition: 0.3s
+    cursor: pointer
+    background-color: #000000
+    color: #EFEFEF
 
 input[type=text]
     border-radius: 5px 0px 0px 5px
