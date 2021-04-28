@@ -32,14 +32,11 @@ function App() {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                'id' : '123',
                 'name': name
             }),
-        })
-        //updating frontend
-        const id = Math.floor(Math.random() * 10000) + 1
-        const newItem: ListItemInterface = {id: id, name: name}
-        setList([...list, newItem])
+        }).then(response => (response.json()))
+            //updating frontend
+            .then(jsonObject => setList([...list, {id: jsonObject.id, name: name}]))
     }
 
     const removeItem = (id: number) => {
